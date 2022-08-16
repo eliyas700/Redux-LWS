@@ -50,7 +50,6 @@ function App() {
           decrement={decrement}
         />
       ))}
-
       <State total={totalCount()} />
     </div>
   );
