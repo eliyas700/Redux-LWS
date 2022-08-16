@@ -9,7 +9,7 @@ function App() {
   const [state, setState] = useState(initialState);
 
   const totalCount = () => {
-    return state.reduce((total, counter) => total + counter.count);
+    return state.reduce((total, counter) => total + counter.count, 0);
   };
 
   const increment = (id) => {
@@ -51,7 +51,7 @@ function App() {
         />
       ))}
 
-      <State total={totalCount} />
+      <State total={totalCount()} />
     </div>
   );
 }
