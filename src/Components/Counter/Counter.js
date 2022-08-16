@@ -8,7 +8,7 @@ const Counter = () => {
   const handleDecrement = () => {
     counter >= 1
       ? setCounter((previousCount) => previousCount - 1)
-      : alert("Can't be less than 0");
+      : alert("Can't be less than 0 ");
   };
 
   return (
